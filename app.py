@@ -382,7 +382,7 @@ if st.session_state.get("email_stage"):
                 msg = EmailMessage()
                 msg['Subject'] = edited_subject
                 msg['From'] = os.getenv("SMTP_USER") 
-                msg['To'] = "talent.legal-engineer.hackathon.client-email@swans.co" 
+                msg['To'] = "talent.legal-engineer.hackathon.automation-email@swans.co" 
                 msg.set_content(edited_email)
                 msg.add_attachment(
                     st.session_state.pdf_bytes, 
